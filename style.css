@@ -1,0 +1,574 @@
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-secundario: #EAF2FD;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+    --color-de-boton: #007BFF;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex; /*coloca los elementos uno al lado del otro*/
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    background-color: var(--color-de-fondo-menu);
+    width: 100%;      
+}
+
+.cabecera__inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.cabecera__logo {
+    max-width: 80px;   /* Ajuste para pantallas pequeñas */
+    max-height: 50px;
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+}
+
+.navegacion__lista .navegacion__elemento:nth-child(0) a {
+    font-weight: bold;   /* Aplica negrita */
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+.navegacion__elemento {
+    display: none;
+}
+
+.navegacion__elemento:last-child {
+    display: flex;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.presentacion__foto {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.presentacion__subtitulo {
+    padding: 5%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 50px;
+    background-color: var(--color-de-fondo-secundario);
+}
+
+.sobre-mi__texto {
+    padding: 20px;
+}
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades {
+    justify-content: center;    
+    padding: 50px 50px;    
+}
+
+.habilidades__titulo {
+    padding: 30px;
+    text-align: center;
+}
+
+.habilidades li {
+    background-color: var(--color-de-fondo-menu);
+}
+
+.habilidades__lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;    
+    width: 130px;
+    height: 130px;
+}
+
+.habilidades__elemento:hover {
+    transform: scale(1.1); /* Escala ligeramente el elemento */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+    border-color: var(--color-de-boton); /* Cambia el color del borde */
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    justify-content: center;    
+    padding: 50px 50px;
+    background-color: var(--color-de-fondo-secundario);
+}
+
+.aficiones__titulo {
+    padding: 30px;
+    text-align: center;
+}
+
+.aficiones li {
+    background-color: var(--color-de-fondo-menu);
+}
+
+.aficiones__lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;    
+    width: 150px;
+    height: 150px;
+}
+
+.aficiones__elemento:hover {
+    transform: scale(1.1); /* Escala ligeramente el elemento */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+    border-color: var(--color-de-boton); /* Cambia el color del borde */
+}
+
+/*------------------------------ Sección de Formacion --------------------------------*/
+.formacion {
+    justify-content: center;    
+    padding: 50px 50px;
+    margin-bottom: 50px;
+}
+
+.formacion__titulo {
+    padding: 30px;
+    text-align: center;
+}
+
+.formacion li {
+    background-color: var(--color-de-fondo-menu);
+}
+
+.formacion__lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.formacion__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;    
+    height: 150px;
+    
+}
+
+.formacion__icono {
+    margin-bottom: 25px;
+}
+
+.formacion__nombre {
+    margin-bottom: 0;
+}
+
+.formacion__detalle {
+    margin-top: 0;
+}
+
+/*------------------------------ Sección de Experiencia --------------------------------*/
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 50px;
+    gap: 5px;
+    background-color: var(--color-de-fondo-secundario);
+}
+
+.experiencia__titulo {
+    padding: 30px;
+    text-align: center;
+}
+.experiencia__nombre {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.experiencia__descripcion {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 50px;
+    gap: 50px;    
+}
+
+.proyectos__titulo {
+    padding: 30px;
+    text-align: center;
+}
+
+.proyectos__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.proyectos__contenedor img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.proyectos__boton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;    
+    margin-top: 5px;
+}
+
+.proyectos__boton--repositorio {
+    background-color: #ffffff;    
+    color: var(--color-de-boton);    
+    border: 2px solid var(--color-de-boton);    
+}
+
+.proyectos__boton--repositorio:hover {
+    font-size: 1.1rem;
+}
+
+.proyectos__boton--demo {
+    background-color: var(--color-de-boton);    
+    color: var(--color-de-fondo-menu);    
+    border: 2px solid var(--color-de-boton);    
+}
+
+.proyectos__boton--demo:hover {
+    font-size: 1.1rem;
+}
+
+.proyectos__descripcion {
+    width: 60%;    
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    padding: 50px 50px;
+    margin-bottom: 100px;
+    background-color: var(--color-de-fondo-secundario);
+}
+
+.contacto__titulo {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contacto__contenedor {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;    
+    justify-content: center;    
+    width: 100%;    
+    gap: 20px;    
+}
+
+.contacto__imagen {
+    display: none;
+}
+
+.contacto__formulario p {
+    text-align: justify;
+    margin: 0;
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 0.1rem solid #eee4e4;
+}
+
+.contacto__campo::placeholder {
+    color: var(--color-de-boton);
+}
+
+.contacto__campo:focus {
+    outline: none;
+    border-bottom: 2px solid #3498db;
+}
+
+.contacto__campo--textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contacto__boton {
+    padding: 1rem 2rem;
+    background-color: var(--color-de-boton);
+    color: var(--color-de-fondo-menu);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Estilo para el footer */
+.footer {
+    background-color: var(--color-de-fondo-menu);
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cabecera {
+        font-size: 0.8rem;
+    }
+    
+    .cabecera__logo {
+        max-width: 80px;
+        max-height: 20px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1rem;
+    }
+
+    .navegacion__elemento {
+        display: flex;        
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .navegacion__lista .navegacion__elemento:nth-child(0) a,
+    .navegacion__lista .navegacion__elemento:nth-child(7) a {
+        font-weight: bold;        /* Aplica negrita */
+    }
+
+    .navegacion__elemento {
+        display: none;     
+    }
+
+    .navegacion__elemento:last-child {
+        display: flex;       
+
+    }
+
+    .presentacion {
+        flex-direction: row-reverse;
+    }
+
+    .presentacion__foto {
+        max-width: 30%;        
+    }
+
+    /*------------------------------ Sección de Formacion --------------------------------*/
+    .formacion{
+        margin-bottom: 80px;
+    }
+
+    .formacion__elemento {
+        flex-basis: 30%;       
+        height: 120px;
+        
+    }
+    .formacion__lista { 
+        gap: 100px;
+    }
+
+    .formacion__icono {
+        margin-bottom: 10px;
+    }
+    
+    /*------------------------------ Sección de Contacto ------------------------------*/
+    .contacto__imagen {
+        display: none;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1rem;
+    }
+
+    .navegacion__elemento {
+        display: flex;        
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-betweenBuen;
+
+        gap: 1rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem; /*tamaño de letra*/
+    }
+
+    .navegacion__lista .navegacion__elemento:nth-child(0) a,
+    .navegacion__lista .navegacion__elemento:nth-child(7) a {
+        font-weight: bold;    /* Aplica negrita */
+    }
+
+    /* ------------------------------ Sección Presentación ------------------------------*/
+    .presentacion {
+        flex-direction: row-reverse;
+    }
+
+    .presentacion__foto {
+        margin-left: 5rem;
+        max-width: 25%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .presentacion__titulo {
+        font-size: 3.25rem;
+    }
+
+    /* ------------------------------ Sección sobre mí ----------------------------------*/
+    .sobre-mi__texto {
+        width: 68%;
+    }
+
+    /*------------------------------ Sección de Formacion --------------------------------*/
+
+    .formacion__elemento {
+        flex-basis: 30%;        /* Cada elemento ocupará el % del ancho del contenedor */
+        height: 120px;
+        margin-bottom: 50px;
+    }
+
+    .formacion__icono {
+        margin-bottom: 10px;
+    }
+    
+    /*------------------------------ Sección de Proyectos --------------------------------*/
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        gap: 70px;
+    }
+
+    .proyectos__contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .proyectos__contenedor:nth-child(odd) {
+        flex-direction: row-reverse;     
+    }
+
+    .proyectos__contenedor img {
+        width: 50%;
+    }
+
+    /*------------------------------ Sección de Contacto --------------------------------*/
+
+    .contacto__formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+    }
+ 
+    .contacto__imagen {
+        max-width: 60%;
+        height: auto;
+        display: flex;
+    }
+}
