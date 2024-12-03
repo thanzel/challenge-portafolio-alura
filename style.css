@@ -110,6 +110,8 @@ a {
 /*------------------------------ Sección de Habilidades ------------------------------*/
 
 .habilidades {
+    align-items: center;
+    align-content: center;
     justify-content: center;    
     padding: 50px 50px;    
 }
@@ -135,9 +137,10 @@ a {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+  
     padding: 10px;    
-    width: 130px;
-    height: 130px;
+    width: 70px;
+    height: 70px;
 }
 
 .habilidades__elemento:hover {
@@ -175,8 +178,8 @@ a {
     justify-content: flex-end;
     align-items: flex-start;
     padding: 10px;    
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
 }
 
 .aficiones__elemento:hover {
@@ -320,7 +323,9 @@ a {
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
 .contacto {
-    padding: 50px 50px;
+    padding: 50px 50px; 
+    align-items: center;
+    align-content: center;
     margin-bottom: 100px;
     background-color: var(--color-de-fondo-secundario);
 }
@@ -446,6 +451,15 @@ a {
         max-width: 30%;        
     }
 
+    .habilidades__elemento {  
+        width:130px;
+        height: 130px;
+    }
+
+    .aficiones__elemento {  
+        width:130px;
+        height: 130px;
+    }
     /*------------------------------ Sección de Formacion --------------------------------*/
     .formacion{
         margin-bottom: 80px;
@@ -520,6 +534,15 @@ a {
         width: 68%;
     }
 
+    .habilidades__elemento {  
+        width:150px;
+        height: 150px;
+    }
+
+    .aficiones__elemento {  
+        width:150px;
+        height: 150px;
+    }
     /*------------------------------ Sección de Formacion --------------------------------*/
 
     .formacion__elemento {
